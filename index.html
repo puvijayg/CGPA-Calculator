@@ -1,0 +1,130 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+      <title>Home Page</title>
+  </head>
+
+  <style>
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4em;
+      margin-bottom: 20px;
+      color: black;
+  }
+  
+  body{
+    background-image: url("img/stat.jpg");
+  }
+    
+  .bdy {
+      font-family: sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 90vh;
+      padding-top: 5px;
+      
+  }
+  .container {
+      text-align: center;
+      padding: 10px;
+  }
+  .decorative-break {
+    width: 50%; 
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /* Fade in and out */
+    margin: 20px auto; 
+  }
+  .card {
+    
+      border-radius: 45px;
+      
+      background: rgba(255, 255, 255, 0.27);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4.4px);
+      -webkit-backdrop-filter: blur(4.4px);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column; 
+      align-items:safe; 
+    padding: 60px;
+      width: 200px;
+  } 
+  .button {
+    background-color: whitesmoke;
+      border: none;
+      font-family: 'Merriweather', serif;
+      color: #333;
+      padding: 10px 20px;
+      text-align: center;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.026);
+      display: block; 
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+  }
+  .button:hover {
+    transform: scale(1.1); 
+  }
+  .button:active {
+    transform: scale(1); 
+  }
+  @media (max-width: 768px) {
+      .card {
+          width: 95%;
+      }
+  }
+  .footer {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.4em;
+    display: block;
+    color: black;
+    background-color: transparent;
+    padding: 0px;
+    text-align: center;
+  
+  }
+  .jk{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1em;
+    
+    cursor: pointer ;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  a.special {
+    color: inherit;
+  }
+  </style>
+  <body>
+    <section class="bdy"> 
+      <div class="container">
+          <h1>Welcome</h1>
+          <div class="card">
+            <button class="button" onclick="window.location.href = 'cgpa-home.html'">Calculate CGPA </button>
+              
+              <hr class="decorative-break">
+              <button class="button" onclick="window.location.href = 'sgpa-home.html'">Calculate SGPA </button>
+              <hr class="decorative-break">
+              <button class="button" onclick="window.location.href='gpa-home.html'">Calculate GPA </button>
+          </div>
+      </div>
+    </section> 
+    <div class="footer">
+      <p>This Webpage is Designed by <a href="https://google.com" class="jk">Puvijay G</a></p> 
+    </div>
+    </body>
+  </html>
